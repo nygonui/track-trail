@@ -37,6 +37,8 @@ body main section {
     width: 360px;
     height: 360px;
 
+    border-radius: 10px;
+
     background-color: rgb(255, 255, 255);
 
     display: flex;
@@ -44,3 +46,58 @@ body main section {
     align-items: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 36px;
+
+    width: 80%;
+
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    border: none;
+    border-bottom: 2px solid rgb(114, 190, 131);
+    outline: none;
+}
+
+form input:hover{
+    border-bottom: 2px solid rgb(66, 109, 75);
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+
+    color: #f0efef;
+
+    margin-top: 50px;
+
+    border: none;
+    background-color: rgb(114, 190, 131);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+form button:hover {
+    color: white;
+    background-color: rgb(85, 145, 98);
+}
+
+section div {
+    margin-top: 60px;
+}
+
+a {  
+    color: #000000;
+}

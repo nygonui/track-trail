@@ -13,7 +13,7 @@
         <h1>Track-Trail</h1>
     </header>
     <main>
-        <section>
+        <section id="login">
             <form>
                 <input id="input-email"  type="email" placeholder="Email">
                 <input id="input-password"type="password" placeholder="Password">
@@ -21,12 +21,45 @@
             </form>
 
             <div>
-                <a href="">Cadastre-se</a>
+                <a onclick="Modal.open()" href="#">Cadastre-se</a>
                 <span>ou</span>
                 <a href="">Esqueceu a senha?</a>
             </div>
+        </section>
+
+        <section class="modal">
+            
+            <h1>Selecione o tipo de perfil</h1>
+            <p>Qual é o meu perfil?</p>
+            <div onclick="Modal.close()" class="div-img-seta">
+                <img src="./img/seta-esquerda.svg" alt="Voltar" title="Voltar para o login">
+            </div>
+            <div>
+                <div id="travel" class="div-img">
+                    <a href="">
+                        <img src="./img/travel.svg" alt="">
+                    </a>
+                </div>
+                
+                <div id="tour-guide" class="div-img">
+                    <a href="">
+                        <img src="./img/tour-guide.svg" alt="">
+                    </a>
+                </div>
+
+                <div id="company" class="div-img">
+                    <a href="">
+                        <img src="./img/company.svg" alt="">
+                    </a>
+                </div>
+                
+            </div>
             
         </section>
+
+
     </main>
 </body>
+
+    <script src="script.js"></script>
 </html>

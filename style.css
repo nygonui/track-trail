@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(151, 255, 173, 1);
+    background-color: rgb(86, 255, 123);
 }
 
 body header {
@@ -21,7 +21,7 @@ body header {
     align-items: center;
 }
 
-body header h1 {
+h1 {
     color: rgb(255, 255, 255);
 }
 
@@ -33,7 +33,7 @@ body main {
     align-items: center;
 }
 
-body main section {
+body main #login {
     width: 360px;
     height: 360px;
 
@@ -64,7 +64,7 @@ form input{
     padding: 5px;
 
     border: none;
-    border-bottom: 2px solid rgb(114, 190, 131);
+    border-bottom: 2px solid rgb(86, 255, 123);
     outline: none;
 }
 
@@ -76,12 +76,13 @@ form button {
     width: 150px;
     height: 50px;
 
-    color: #f0efef;
+    color: white;
+    font-weight: 700;
 
     margin-top: 50px;
 
     border: none;
-    background-color: rgb(114, 190, 131);
+    background-color: rgb(86, 255, 123);
     border-radius: 10px;
 
     cursor: pointer;
@@ -94,10 +95,77 @@ form button:hover {
     background-color: rgb(85, 145, 98);
 }
 
-section div {
+#login div {
     margin-top: 60px;
 }
 
 a {  
     color: #000000;
+}
+
+.modal{
+    background-color:rgb(86, 255, 123);
+    width: 100%;
+    height: 80%;
+
+    position: fixed;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal div {
+    width: 420px;
+    height: 170px;
+    background-color: white;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 10px;
+
+}
+
+.modal p {
+    color: white;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal .div-img-seta{
+    width: 25px;
+    height: 25px;
+
+    margin-bottom: 10px;;
+
+    background-color: rgb(86, 255, 123);
+
+    cursor: pointer;
+
+    position: relative;
+    left: -195px;
+}
+
+.modal .div-img{
+    width: 100px;
+    height: 110px;
+    padding: 5px;
+    border-radius: 5px;
+
+    
+    background-color: rgb(64, 230, 100);
 }
